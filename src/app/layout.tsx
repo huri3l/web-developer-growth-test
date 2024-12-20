@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Moises",
@@ -12,8 +13,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#000" />
+      </head>
       <body>
-        <main style={{ padding: 32 }}>{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
