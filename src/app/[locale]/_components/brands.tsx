@@ -15,7 +15,7 @@ interface BrandsProps {
 }
 
 export function Brands({ data }: BrandsProps) {
-  const { theme, brands } = data;
+  const { brands } = data;
 
   return (
     <section>

@@ -24,7 +24,7 @@ export async function generateMetadata(
     description: global.metadata.metaDescription,
     robots: global.metadata.robots,
     openGraph: {
-      images: [global.metadata.shareImage, ...previousImages],
+      images: [...previousImages],
     },
   };
 }

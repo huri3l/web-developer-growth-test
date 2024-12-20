@@ -197,18 +197,18 @@ CarouselItem.displayName = "CarouselItem";
 const CarouselPrevious = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
->(({ className, variant = "ghost", size = "icon", ...props }, ref) => {
-  const { orientation, scrollPrev, canScrollPrev } = useCarousel();
+>(({ variant = "ghost", size = "icon", ...props }, ref) => {
+  const { scrollPrev, canScrollPrev } = useCarousel();
 
   return (
     <Button
       ref={ref}
       variant={variant}
       size={size}
-      className="rounded-full bg-white text-black hover:bg-white/90 hover:text-black"
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}
+      className="rounded-full bg-white text-black hover:bg-white/90 hover:text-black"
     >
       <ArrowLeft className="h-4 w-4" />
       <span className="sr-only">Previous slide</span>
@@ -220,18 +220,18 @@ CarouselPrevious.displayName = "CarouselPrevious";
 const CarouselNext = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
->(({ className, variant = "ghost", size = "icon", ...props }, ref) => {
-  const { orientation, scrollNext, canScrollNext } = useCarousel();
+>(({ variant = "ghost", size = "icon", ...props }, ref) => {
+  const { scrollNext, canScrollNext } = useCarousel();
 
   return (
     <Button
       ref={ref}
       variant={variant}
       size={size}
-      className="rounded-full bg-white text-black hover:bg-white/90 hover:text-black"
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
+      className="rounded-full bg-white text-black hover:bg-white/90 hover:text-black"
     >
       <ArrowRight className="h-4 w-4" />
       <span className="sr-only">Next slide</span>

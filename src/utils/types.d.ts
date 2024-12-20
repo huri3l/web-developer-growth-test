@@ -15,7 +15,7 @@ export interface Metadata {
   metaTitle: string;
   metaDescription: string;
   robots: string;
-  shareImage: any;
+  shareImage?: string;
 }
 
 export interface Menu {
@@ -45,7 +45,7 @@ export interface Social {
 export interface FooterMenu {
   id: number;
   title?: string;
-  link: any;
+  link: string;
   openNewWindow: boolean;
   dropdown: Dropdown[];
 }
@@ -70,7 +70,7 @@ export interface Metadata {
   metaTitle: string;
   metaDescription: string;
   robots: string;
-  shareImage: any;
+  shareImage?: string;
 }
 
 export interface ContentSection {
@@ -100,10 +100,10 @@ export interface Button {
   color: string;
   url: string;
   text: string;
-  subText: any;
+  subText: null;
   fluid: boolean;
   newTab: boolean;
-  startIcon: any;
+  startIcon: Icon;
   endIcon?: string;
 }
 
@@ -116,7 +116,7 @@ export interface Demo {
 
 export interface Background {
   id: number;
-  alternativeText: any;
+  alternativeText?: string;
   width: number;
   height: number;
   url: string;
@@ -124,7 +124,7 @@ export interface Background {
 
 export interface Brand {
   id: number;
-  alternativeText: any;
+  alternativeText?: string;
   title?: string;
   url: string;
 }

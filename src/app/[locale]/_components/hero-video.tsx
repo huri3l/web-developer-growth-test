@@ -48,16 +48,7 @@ interface HeroVideoProps {
 }
 
 export function HeroVideo({ data }: HeroVideoProps) {
-  const {
-    theme,
-    full,
-    preTitle,
-    title,
-    description,
-    buttons,
-    demo,
-    background,
-  } = data;
+  const { theme, full, title, description, buttons, demo, background } = data;
 
   return (
     <section
